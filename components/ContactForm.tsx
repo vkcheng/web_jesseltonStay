@@ -22,8 +22,9 @@ export default function ContactForm() {
                 setMessage(result.error || "Something went wrong. Please try again.");
             }
         } catch (err) {
+            console.error("Form submission error:", err);
             setStatus("error");
-            setMessage("An unexpected error occurred.");
+            setMessage("An unexpected error occurred. Please check console for details.");
         }
     }
 
