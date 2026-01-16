@@ -44,10 +44,12 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="flex flex-col md:flex-row gap-4 justify-center"
                 >
-                    <button className="bg-sun-yellow hover:bg-yellow-400 text-teal-900 px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-xl flex items-center justify-center gap-2">
+                    <Link
+                        href="#rooms"
+                        className="bg-sun-yellow hover:bg-yellow-400 text-teal-900 px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-xl flex items-center justify-center gap-2"
+                    >
                         <span>Explore Rooms</span>
-                        {/* Arrow icon could go here */}
-                    </button>
+                    </Link>
                     <Link
                         href="#contact"
                         className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/50 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center text-center"

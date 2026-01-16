@@ -34,7 +34,7 @@ export default function Rooms() {
     ];
 
     return (
-        <section className="py-20 bg-sand-beige/50" id="rooms">
+        <section className="py-20 bg-sand-beige/50 scroll-mt-24" id="rooms">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <span className="text-tropical-teal font-bold uppercase tracking-wider">Our Rooms</span>
