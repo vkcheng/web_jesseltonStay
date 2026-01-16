@@ -1,21 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, Maximize, Wifi } from "lucide-react";
+import { Bed, Bath, Maximize, Wifi, Waves } from "lucide-react";
 
 export default function Rooms() {
     const rooms = [
         {
             name: "Corner Unit",
-            capacity: "4-6 Pax",
-            size: "900 sqft",
+            details: [
+                { icon: Bed, text: "2 Beds" },
+                { icon: Bath, text: "2 Baths" },
+                { icon: Maximize, text: "700 sqft" },
+                { icon: Waves, text: "Seaview" },
+                { icon: Wifi, text: "Free Wi-Fi" },
+            ],
+            amenities: "Washer + Dryer included",
             price: "RM 320",
             image: "https://huiluiebajsmbrejbnux.supabase.co/storage/v1/object/public/images/JesseltonStay/IMG-20221215-WA0214-1.jpg",
         },
         {
             name: "Intermediate Unit",
-            capacity: "4-6 Pax",
-            size: "800 sqft",
+            details: [
+                { icon: Bed, text: "2 Beds" },
+                { icon: Bath, text: "1 Bath" },
+                { icon: Maximize, text: "500 sqft" },
+                { icon: Waves, text: "Seaview / Cityview" },
+                { icon: Wifi, text: "Free Wi-Fi" },
+            ],
+            amenities: "Washer + Dryer included",
             price: "RM 250",
             image: "https://huiluiebajsmbrejbnux.supabase.co/storage/v1/object/public/images/JesseltonStay/IMG-20221215-WA0200.jpg",
         },
@@ -31,7 +43,7 @@ export default function Rooms() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {rooms.map((room, index) => (
                         <motion.div
                             key={index}
@@ -40,29 +52,27 @@ export default function Rooms() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                             whileHover={{ y: -10 }}
-                            className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+                            className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col"
                         >
-                            <div className="h-64 bg-gray-200 relative overflow-hidden">
+                            <div className="h-72 bg-gray-200 relative overflow-hidden">
                                 <img src={room.image} alt={room.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
-                                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-bold text-teal-900">
+                                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-full text-base font-bold text-teal-900 shadow-sm">
                                     {room.price} / night
                                 </div>
                             </div>
-                            <div className="p-8">
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">{room.name}</h3>
-                                <div className="flex justify-between items-center text-gray-600 mb-6 border-b border-gray-100 pb-6">
-                                    <div className="flex items-center gap-2">
-                                        <Users size={18} />
-                                        <span className="text-sm">{room.capacity}</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Maximize size={18} />
-                                        <span className="text-sm">{room.size}</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Wifi size={18} />
-                                        <span className="text-sm">Free</span>
-                                    </div>
+                            <div className="p-8 flex-grow">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-6">{room.name}</h3>
+                                <div className="grid grid-cols-2 gap-y-4 gap-x-2 mb-6 border-b border-gray-100 pb-6">
+                                    {room.details.map((detail, dIndex) => (
+                                        <div key={dIndex} className="flex items-center gap-3 text-gray-600">
+                                            <detail.icon size={20} className="text-tropical-teal" />
+                                            <span className="text-sm font-medium">{detail.text}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="flex items-center gap-3 text-tropical-teal font-semibold text-sm">
+                                    <div className="w-2 h-2 rounded-full bg-sun-yellow" />
+                                    {room.amenities}
                                 </div>
                             </div>
                         </motion.div>
