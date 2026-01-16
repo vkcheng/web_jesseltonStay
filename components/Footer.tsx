@@ -60,7 +60,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-teal-800 pt-8 text-center text-teal-400 text-sm">
-                    <p>© {new Date().getFullYear()} Jesselton Stay. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Jesselton Stay. All rights reserved. | Design and manage by <a href="https://www.sabahclick.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">SabahClick</a></p>
                 </div>
             </div>
         </footer>
