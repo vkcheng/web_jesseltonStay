@@ -26,7 +26,7 @@ export default function Location() {
                     >
                         <div
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop')" }} // Food
+                            style={{ backgroundImage: "url('https://huiluiebajsmbrejbnux.supabase.co/storage/v1/object/public/images/JesseltonStay/food%20-%20Copy.jpg')" }} // Food
                         />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
                         <div className="absolute bottom-0 left-0 p-6">
@@ -42,7 +42,7 @@ export default function Location() {
                     >
                         <div
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1574634534894-89d7576c8259?q=80&w=1000&auto=format&fit=crop')" }} // Shopping/Street
+                            style={{ backgroundImage: "url('https://huiluiebajsmbrejbnux.supabase.co/storage/v1/object/public/images/JesseltonStay/suriasabah%20-%20Copy.jpg')" }} // City Centre
                         />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
                         <div className="absolute bottom-0 left-0 p-6">
@@ -58,12 +58,12 @@ export default function Location() {
                     >
                         <div
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1000&auto=format&fit=crop')" }} // Sunset/Beach
+                            style={{ backgroundImage: "url('https://huiluiebajsmbrejbnux.supabase.co/storage/v1/object/public/images/JesseltonStay/gaya%20-%20Copy.jpg')" }} // Gaya Street
                         />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
                         <div className="absolute bottom-0 left-0 p-6">
-                            <h3 className="text-2xl font-bold text-white mb-1">Sunset Views</h3>
-                            <p className="text-white/80">Famous KK Sunset</p>
+                            <h3 className="text-2xl font-bold text-white mb-1">Gaya Street</h3>
+                            <p className="text-white/80">Famous Sunday Market & Eateries</p>
                         </div>
                     </motion.div>
                 </div>
