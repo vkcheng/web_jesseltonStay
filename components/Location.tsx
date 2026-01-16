@@ -69,10 +69,15 @@ export default function Location() {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <button className="inline-flex items-center gap-2 text-tropical-teal font-bold hover:text-tropical-teal-600 transition-colors">
+                    <a
+                        href="https://www.google.com/maps/place/5%C2%B059'28.0%22N+116%C2%B004'52.4%22E"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-tropical-teal font-bold hover:text-tropical-teal-600 transition-colors"
+                    >
                         <MapPin size={20} />
                         View on Google Maps
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
