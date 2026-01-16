@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, Facebook } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -49,11 +49,8 @@ export default function Footer() {
                     <div>
                         <h4 className="text-xl font-bold mb-6 text-sun-yellow">Follow Us</h4>
                         <div className="flex gap-4 mb-8">
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-sun-yellow hover:text-teal-900 transition-all">
+                            <a href="https://www.facebook.com/blisshomesabah" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-sun-yellow hover:text-teal-900 transition-all">
                                 <Facebook size={20} />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-sun-yellow hover:text-teal-900 transition-all">
-                                <Instagram size={20} />
                             </a>
                         </div>
                     </div>
