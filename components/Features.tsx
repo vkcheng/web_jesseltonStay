@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Wifi, Car, Utensils, ShoppingBag, Waves } from "lucide-react";
+import { MapPin, Wifi, Palmtree, Utensils, ShoppingBag, Waves } from "lucide-react";
 
 export default function Features() {
     const features = [
@@ -24,9 +24,9 @@ export default function Features() {
             color: "bg-sun-yellow text-teal-900", // Yellow needs dark text
         },
         {
-            icon: Car,
-            title: "Transport Arrangement",
-            desc: "We can help arrange airport transfers and car rentals.",
+            icon: Palmtree,
+            title: "Island hopping",
+            desc: "Walking to KK Jetty exploring beautiful islands of Sabah",
             color: "bg-orange-400",
         },
         {
