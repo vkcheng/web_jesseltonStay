@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -47,9 +48,12 @@ export default function Hero() {
                         <span>Explore Rooms</span>
                         {/* Arrow icon could go here */}
                     </button>
-                    <button className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/50 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center">
+                    <Link
+                        href="#contact"
+                        className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/50 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center text-center"
+                    >
                         Contact Us
-                    </button>
+                    </Link>
                 </motion.div>
             </div>
         </section>
