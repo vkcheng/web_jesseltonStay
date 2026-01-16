@@ -35,7 +35,13 @@ export default function Header() {
             )}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link href="/" className="text-3xl font-bold text-white drop-shadow-lg">
+                <Link
+                    href="/"
+                    className={clsx(
+                        "text-3xl font-bold transition-colors duration-300",
+                        scrolled ? "text-tropical-teal" : "text-white drop-shadow-lg"
+                    )}
+                >
                     Jesselton Stay
                 </Link>
 
@@ -45,7 +51,10 @@ export default function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-gray-700 hover:text-tropical-teal font-medium transition-colors flex items-center gap-2"
+                            className={clsx(
+                                "font-medium transition-colors duration-300 flex items-center gap-2",
+                                scrolled ? "text-gray-700 hover:text-tropical-teal" : "text-white/90 hover:text-white"
+                            )}
                         >
                             <link.icon size={18} />
                             {link.name}
@@ -55,7 +64,10 @@ export default function Header() {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-gray-700"
+                    className={clsx(
+                        "md:hidden transition-colors duration-300",
+                        scrolled ? "text-gray-700" : "text-white"
+                    )}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
