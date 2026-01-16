@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Features from "@/components/Features";
 import Rooms from "@/components/Rooms";
 import Location from "@/components/Location";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <Rooms />
       <Location />
+      <ContactForm />
       <Footer />
     </main>
   );
